@@ -60,7 +60,7 @@ from the command-line.
 
 ### Where is the code seen during classes?
 
-Go to `_includes/code`{: .filepath}, you will have all of the code seen in class classified by weeks and days.
+Go to `_includes/code`{: .filepath}, you will have all of the code seen in class classified by weeks and days 😎.
 
 ### In case of issues pulling latest changes
 
