@@ -38,11 +38,9 @@ copyright:
   # Displayed in the footer
   brief: Néhány jog fenntartva.
   verbose: >-
-   Az oldalon található tartalmak
-   Creative Commons Attribution 4.0 International (CC BY 4.0) licenccel rendelkeznek,
-   hacsak másképp nincs jelezve.
-
-meta: Készítve :PLATFORM motorral :THEME témával.
+    Az oldalon található tartalmak
+    Creative Commons Attribution 4.0 International (CC BY 4.0) licenccel rendelkeznek,
+    hacsak másképp nincs jelezve.
 
 not_found:
   statment: Sajnáljuk, az URL-t rosszul helyeztük el, vagy valami nem létezőre mutat.
