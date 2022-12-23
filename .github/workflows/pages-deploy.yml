@@ -34,8 +34,6 @@ jobs:
           # submodules: true
           # If using the 'assets' git submodule from Chirpy Starter, uncomment above
           # (See: https://github.com/cotes2020/chirpy-starter/tree/main/assets)
-      - name: Change Directory
-        run: cd website
 
       - name: Setup Pages
         id: pages
@@ -49,7 +47,8 @@ jobs:
 
       - name: Build site
         run: |
-          pwd
+          ls
+          cd website
           bundle exec jekyll b -d "_site${{ steps.pages.outputs.base_path }}"
         env:
           JEKYLL_ENV: "production"
