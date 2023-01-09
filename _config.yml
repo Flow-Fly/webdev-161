@@ -5,7 +5,7 @@ theme: jekyll-theme-chirpy
 
 # Change the following value to '/PROJECT_NAME' ONLY IF your site type is GitHub Pages Project sites
 # and doesn't have a custom domain.
-baseurl: "/webdev-161"
+baseurl: #"/webdev-161"
 
 # The language of the webpage › http://www.lingoes.net/en/translator/langcode.htm
 # If it has the same name as one of the files in folder `_data/locales`, the layout language will also be changed,
@@ -23,7 +23,7 @@ title: Squad 161 # the main title
 tagline: A repository packed with all of the content seen in class # it will display as the sub-title
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
-url: "https://flow-fly.github.io"
+url: "https://flo-a.dev" # "https://flow-fly.github.io"
 
 github:
   username: Flow-Fly # change to your github username
