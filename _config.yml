@@ -5,7 +5,7 @@ theme: jekyll-theme-chirpy
 
 # Change the following value to '/PROJECT_NAME' ONLY IF your site type is GitHub Pages Project sites
 # and doesn't have a custom domain.
-baseurl:
+baseurl: '/webdev-161'
 
 # The language of the webpage › http://www.lingoes.net/en/translator/langcode.htm
 # If it has the same name as one of the files in folder `_data/locales`, the layout language will also be changed,
@@ -65,7 +65,7 @@ theme_mode: # [light|dark]
 img_cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar: "webdev-161/assets/img/Web-dev.png"
+avatar: "assets/img/Web-dev.png"
 
 # boolean type, the global switch for ToC in posts.
 toc: true
@@ -143,11 +143,11 @@ defaults:
       layout: page
       permalink: /:title/
   - scope:
-      path: webdev-161/assets/img/favicons
+      path: assets/img/favicons
     values:
       swcache: true
   - scope:
-      path: webdev-161/assets/js/dist
+      path: assets/js/dist
     values:
       swcache: true
 
