@@ -143,11 +143,11 @@ defaults:
       layout: page
       permalink: /:title/
   - scope:
-      path: assets/img/favicons
+      path: webdev-161/assets/img/favicons
     values:
       swcache: true
   - scope:
-      path: assets/js/dist
+      path: webdev-161/assets/js/dist
     values:
       swcache: true
 
