@@ -147,7 +147,7 @@ defaults:
     values:
       swcache: true
   - scope:
-      path: webdev-161/assets/js/dist
+      path: assets/js/dist
     values:
       swcache: true
 
