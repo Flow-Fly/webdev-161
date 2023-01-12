@@ -1,0 +1,1 @@
+node info.js $*

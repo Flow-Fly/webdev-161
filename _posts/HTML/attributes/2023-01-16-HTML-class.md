@@ -2,7 +2,7 @@
 title: class
 date: 2022-01-16 08:00:00 +/-0000
 categories: [Module-1, day-1]
-tags: [attributes, class, HTML, CSS]
+tags: [attributes, class, html, css]
 ---
 
 # Class attribute
