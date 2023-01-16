@@ -1,7 +1,7 @@
 ---
 title: Importing ressources
 date: 2022-01-16 08:00:00 +/-0000
-categories: [Module-1,week-1, day-1]
+categories: [week-1, day-1]
 tags: [link, css, js, JavaScript, img, import, module]
 ---
 
