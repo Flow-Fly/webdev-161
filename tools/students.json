@@ -3,7 +3,7 @@
     "name": "Arthur",
     "fullname": "Arthur Chaudoreille",
     "morningSunshine": {
-      "date": "2022-11-21T00:00:00.000Z"
+      "date": "2023-02-14T00:00:00.000Z"
     },
     "github": {
       "username": "Chaudoreille",
@@ -16,7 +16,7 @@
     "name": "Cedric",
     "fullname": "Cedric Chatellier",
     "morningSunshine": {
-      "date": "2022-11-10T00:00:00.000Z"
+      "date": "2023-01-23T00:00:00.000Z"
     },
     "github": {
       "username": "cedchate",
@@ -26,10 +26,23 @@
     "status": "student"
   },
   {
+    "name": "Christ",
+    "fullname": "Christ Kouassi",
+    "morningSunshine": {
+      "date": "2023-03-02T00:00:00.000Z"
+    },
+    "github": {
+      "username": "Mershouta",
+      "link": "https://github.com/Mershouta"
+    },
+    "projects": [],
+    "status": "student"
+  },
+  {
     "name": "Delfina",
     "fullname": "Delfina Marchetti",
     "morningSunshine": {
-      "date": "2022-11-11T00:00:00.000Z"
+      "date": "2023-01-20T00:00:00.000Z"
     },
     "github": {
       "username": "dolphinstreet",
@@ -42,7 +55,7 @@
     "name": "Emmanuelle",
     "fullname": "Emmanuelle Sellin",
     "morningSunshine": {
-      "date": "2022-11-04T00:00:00.000Z"
+      "date": "2023-02-09T00:00:00.000Z"
     },
     "github": {
       "username": "avengingtooth",
@@ -55,7 +68,7 @@
     "name": "Fabien",
     "fullname": "Fabien Gentil",
     "morningSunshine": {
-      "date": "2022-11-04T00:00:00.000Z"
+      "date": "2023-01-27T00:00:00.000Z"
     },
     "github": {
       "username": "bef4455",
@@ -68,7 +81,7 @@
     "name": "Hiromi",
     "fullname": "Hiromi Varnier",
     "morningSunshine": {
-      "date": "2022-10-21T00:00:00.000Z"
+      "date": "2023-03-07T00:00:00.000Z"
     },
     "github": {
       "username": "rominamarmontel",
@@ -81,24 +94,11 @@
     "name": "Ismet",
     "fullname": "Ismet Medjebeur",
     "morningSunshine": {
-      "date": "2022-11-22T00:00:00.000Z"
+      "date": "2023-02-16T00:00:00.000Z"
     },
     "github": {
-      "username": "guilhem1492",
-      "link": "https://github.com/guilhem1492"
-    },
-    "projects": [],
-    "status": "student"
-  },
-  {
-    "name": "Jean-Christ",
-    "fullname": "Jean-Christ Kouassi",
-    "morningSunshine": {
-      "date": "2022-11-02T00:00:00.000Z"
-    },
-    "github": {
-      "username": "hugoviolas",
-      "link": "https://github.com/hugoviolas"
+      "username": "ismetmedj",
+      "link": "https://github.com/ismetmedj"
     },
     "projects": [],
     "status": "student"
@@ -107,7 +107,7 @@
     "name": "Jean-Luc",
     "fullname": "Jean-Luc Tan",
     "morningSunshine": {
-      "date": "2022-11-08T00:00:00.000Z"
+      "date": "2023-01-24T00:00:00.000Z"
     },
     "github": {
       "username": "jltp2c",
@@ -120,7 +120,7 @@
     "name": "Keifer",
     "fullname": "Keifer Shearer",
     "morningSunshine": {
-      "date": "2022-10-14T00:00:00.000Z"
+      "date": "2023-01-26T00:00:00.000Z"
     },
     "github": {
       "username": "keifershearer",
@@ -133,7 +133,7 @@
     "name": "Kilian",
     "fullname": "Kilian Pouliquen",
     "morningSunshine": {
-      "date": "2022-11-23T00:00:00.000Z"
+      "date": "2023-02-13T00:00:00.000Z"
     },
     "github": {
       "username": "lekix-lekix",
@@ -146,7 +146,7 @@
     "name": "Loïc",
     "fullname": "Loïc Messela",
     "morningSunshine": {
-      "date": ""
+      "date": "2023-03-01T00:00:00.000Z"
     },
     "github": {
       "username": "LoicMessela",
@@ -159,7 +159,7 @@
     "name": "Lucie",
     "fullname": "Lucie Lanssade",
     "morningSunshine": {
-      "date": "2022-11-01T00:00:00.000Z"
+      "date": "2023-02-28T00:00:00.000Z"
     },
     "github": {
       "username": "Lucie-Lanssade",
@@ -172,7 +172,7 @@
     "name": "Tom",
     "fullname": "Mahé Tom",
     "morningSunshine": {
-      "date": "2022-10-31T00:00:00.000Z"
+      "date": "2023-02-06T00:00:00.000Z"
     },
     "github": {
       "username": "mahettom",
@@ -185,7 +185,7 @@
     "name": "Marianne",
     "fullname": "Marianne Agulhon",
     "morningSunshine": {
-      "date": "2022-10-13T00:00:00.000Z"
+      "date": "2023-02-27T00:00:00.000Z"
     },
     "github": {
       "username": "Magdev98",
@@ -198,11 +198,11 @@
     "name": "Mehdi",
     "fullname": "Mehdi Ed-Dira",
     "morningSunshine": {
-      "date": "2022-10-19T00:00:00.000Z"
+      "date": "2023-02-08T00:00:00.000Z"
     },
     "github": {
-      "username": "",
-      "link": "https://github.com/"
+      "username": "eddira",
+      "link": "https://github.com/eddira/"
     },
     "projects": [],
     "status": "student"
@@ -211,7 +211,7 @@
     "name": "Michael",
     "fullname": "Michael Biezin",
     "morningSunshine": {
-      "date": "2022-10-18T00:00:00.000Z"
+      "date": "2023-01-25T00:00:00.000Z"
     },
     "github": {
       "username": "TheMike1972",
@@ -224,11 +224,11 @@
     "name": "Phu",
     "fullname": "Phu Ka",
     "morningSunshine": {
-      "date": "2022-10-17T00:00:00.000Z"
+      "date": "2023-03-06T00:00:00.000Z"
     },
     "github": {
-      "username": "MMWick",
-      "link": "https://github.com/MMWick"
+      "username": "PhuKaRY",
+      "link": "https://github.com/PhuKaRY"
     },
     "projects": [],
     "status": "student"
@@ -237,7 +237,7 @@
     "name": "Sebastian",
     "fullname": "Sebastian Mottschall",
     "morningSunshine": {
-      "date": "2022-11-03T00:00:00.000Z"
+      "date": "2023-03-03T00:00:00.000Z"
     },
     "github": {
       "username": "Mottschi",
@@ -250,7 +250,7 @@
     "name": "Soizic",
     "fullname": "Soizic Cistac",
     "morningSunshine": {
-      "date": "2022-11-07T00:00:00.000Z"
+      "date": "2023-02-15T00:00:00.000Z"
     },
     "github": {
       "username": "SoizicCistac",
@@ -263,7 +263,7 @@
     "name": "Sophie",
     "fullname": "Sophie Dautroy",
     "morningSunshine": {
-      "date": "2022-10-20T00:00:00.000Z"
+      "date": "2023-02-10T00:00:00.000Z"
     },
     "github": {
       "username": "So-Mina",
@@ -276,7 +276,7 @@
     "name": "Thomas",
     "fullname": "Thomas Demathieu",
     "morningSunshine": {
-      "date": "2022-11-09T00:00:00.000Z"
+      "date": "2023-02-17T00:00:00.000Z"
     },
     "github": {
       "username": "lessacs",
@@ -289,11 +289,11 @@
     "name": "Vishnu",
     "fullname": "Vishnu Sreekumar",
     "morningSunshine": {
-      "date": "2022-11-09T00:00:00.000Z"
+      "date": "2023-02-07T00:00:00.000Z"
     },
     "github": {
-      "username": "",
-      "link": "https://github.com/"
+      "username": "VishnuSobhana",
+      "link": "https://github.com/VishnuSobhana"
     },
     "projects": [],
     "status": "student"
