@@ -5,9 +5,14 @@ categories: [week-1, day-1]
 tags: [position, css, html, tag, attribute, display]
 ---
 
+# Module-1, Week-1, Day-1
+
+>M1W1D1
 
 You can find the example implemented in class here:
+
 ## HTML
+
 ```html
  {% include code/w1/day-1/index.html %}
 ```
