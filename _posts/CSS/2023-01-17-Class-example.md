@@ -14,11 +14,11 @@ Check the examples done in class!
 ## HTML
 
 ```html
-{% code/w1/day-2/example-website/index.html %}
+{% include code/w1/day-2/example-website/index.html %}
 ```
 
 ## CSS
 
 ```css
-{% code/w1/day-2/example-website/style.css %}
+{% include code/w1/day-2/example-website/style.css %}
 ```
