@@ -1,0 +1,22 @@
+
+h1 {
+  font-size: calc(1.5rem + 3vw);
+}
+
+.box {
+  height: 100px;
+  width: 100px;
+  background-image: linear-gradient(to bottom, red 0%, black 33%, yellow 100%);
+}
+
+@media (width > 600px) {
+  .box {
+    height: 200px;
+  }
+}
+
+@media (600px < width < 650px) {
+  .box {
+    width: 200px;
+  }
+}

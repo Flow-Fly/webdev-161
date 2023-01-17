@@ -1,0 +1,65 @@
+/* Selector specificity, Direct children and deep childs selection */
+
+#strong-selection {
+  background-color: antiquewhite;
+}
+
+
+
+.ancient .children {
+  background-color: firebrick;
+}
+
+.parent > .children {
+  background-color: blue;
+}
+
+/* Don't do that 🤷‍♂️ */
+/* [class="children"] {
+  font-size: 2rem;
+} */
+
+div {
+  color: green
+}
+
+a[href="https://youtube.com"] {
+  color: red
+}
+
+a[href*="https"] {
+  background-color: slategrey;
+}
+
+ol > li:nth-child(3) {
+  font-weight: bold;
+}
+
+ol > li:nth-child(even) {
+  background-color: firebrick;
+}
+
+ol > li:nth-child(2) + li {
+  background-color: steelblue;
+}
+
+
+.card, article, section {
+  font-family: sans-serif;
+  background-color: aliceblue;
+  height: 200px;
+  max-width: 200px;
+  border-radius: .25rem;
+  box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.133);
+  color: black;
+  /* padding-top: 1rem;
+  padding-right: .25rem;
+  padding-bottom:1.5rem ;
+  padding-left: 2rem; */
+  padding: 1rem;
+}
+
+
+
+
+
