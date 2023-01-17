@@ -1,5 +1,5 @@
 ---
-title: TITLE
+title: Responsive titles and media query
 date: 2023-01-17 08:00:00 +/-0000
 categories: [module-1, week-1]
 tags: [responsive, title, vw, css]

@@ -1,5 +1,5 @@
 ---
-title: Class example
+title: Class example M1W1D2
 date: 2023-01-17 08:00:00 +/-0000
 categories: [module-1, week-1]
 tags: [css, responsive, media-query]

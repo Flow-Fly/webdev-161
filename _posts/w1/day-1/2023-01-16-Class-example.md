@@ -1,5 +1,5 @@
 ---
-title: Class example
+title: Class example M1W1D1
 date: 2023-01-16 08:00:00 +/-0000
 categories: [module-1, week-1]
 tags: [position, css, html, tag, attribute, display]
