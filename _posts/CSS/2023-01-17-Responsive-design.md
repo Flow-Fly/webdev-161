@@ -35,10 +35,10 @@ All of the rules inside of the media-query will be applied only if the width of 
 font-size of titles can be modified so that their size increase when the screen gets bigger.
 To do so we rely on units like `vw` (viewport-width), 50vw is half of the viewport size.
 
-[Check the example from the class]({% post_url /CSS/2023-01-17-Responsive-titles.md %})
+[Check the example from the class]({% post_url CSS/2023-01-17-Responsive-titles.md %})
 
 ## Modifying flexboxes with media-queries
 
 The inherent concept is rather straightforward, typically, if I am on a mobile, I want my elements to be displayed in a column, when I am on a bigger screen, I will want elements to be displayed in a row or at the very least take a little more space on my screen.
 
-[Check the example from the class]({% post_url /CSS/2023-01-17-Class-example.md %})
+[Check the example from the class]({% post_url CSS/2023-01-17-Class-example.md %})
