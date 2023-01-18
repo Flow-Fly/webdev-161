@@ -28,7 +28,7 @@ Here is the general structure of a media query:
 }
 ```
 
-All of the rules inside of the media-query will be applied only if the width of our screen is strictly bigger than 600px (in this example).
+All of the rules inside of the media-query will be applied **only** if the width of our screen is strictly bigger than 600px (in this example).
 
 ## Titles
 
@@ -42,3 +42,4 @@ To do so we rely on units like `vw` (viewport-width), 50vw is half of the viewpo
 The inherent concept is rather straightforward, typically, if I am on a mobile, I want my elements to be displayed in a column, when I am on a bigger screen, I will want elements to be displayed in a row or at the very least take a little more space on my screen.
 
 [Check the example from the class]({% post_url /w1/day-2/2023-01-17-Class-example %})
+****
