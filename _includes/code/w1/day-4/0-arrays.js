@@ -24,10 +24,13 @@ studentsArray.shift()
 // console.log(studentsArray.length)
 // Looping over an Array
 
+// Shallow copy of an array
 const copyOfStudentsArray = studentsArray.slice()
 
-let amountOfRemovedElements = 0
-
+// let amountOfRemovedElements = 0
+/**
+ * Extra reflexion on how to remove falsy elements from an Array
+ */
 for (let i = 0; i < studentsArray.length; i++) {
   const element = studentsArray[i]
   if (!element) {
@@ -47,6 +50,7 @@ for (const name of studentsArray.reverse()) {
   console.log(name)
 }
 
+// forEach does not return anything, therefore it returns "undefined"
 const value = studentsArray.forEach(function (name, i, array) {
   console.log(name, i, array)
   return 'hey'
@@ -77,6 +81,7 @@ copyOfSimpleArray[0] = 'not a copy'
 
 const test = [null, undefined]
 
+// Creating a deep copy with structuredClone and with JSON.parse and JSON.stringify
 const newCopy = structuredClone(test)
 console.log(
   '🚀 ~ file: 0-arrays.js:81 ~ newCopy',

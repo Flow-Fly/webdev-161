@@ -82,11 +82,18 @@ const students = [
   },
 ]
 
+/**
+ * Classic for loop
+ */
 for (let i = 0; i < students.length; i++) {
   const student = students[i]
   console.log(student.name)
 }
 
+/**
+ * for - of loop
+ * The idea is that we will get the element we are iterating on instead of just getting an index.
+ */
 for (const student of students) {
   console.log(student.name)
 }
@@ -107,6 +114,7 @@ const findOldestStudent = (arrayOfStudents) => {
   }
   return oldestStudent
 }
+
 const oldestStudent = findOldestStudent(students)
 console.log('🚀 ~ file: 3-functions.js:94 ~ oldestStudent', oldestStudent)
 
@@ -117,6 +125,8 @@ console.log(test)
 // Average
 
 function averageAge(arrayOfStudents) {
+  // arrayOfStudents is the Array which was passed as argument to the
+  // averageAge function.
   let sum = 0
   for (const student of arrayOfStudents) {
     sum += student.age
@@ -127,5 +137,3 @@ function averageAge(arrayOfStudents) {
 }
 
 console.log(averageAge(students))
-
-// Dealing with errors
