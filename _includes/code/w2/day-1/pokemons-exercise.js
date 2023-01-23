@@ -4053,6 +4053,11 @@ const pokemons = [
 
 class Pokemon {
   constructor(name, health, attack, defense) {
+    this.name = name
+    this.health = health
+    this.attack = attack
+    this.defense = defense
+
     /**
      * Add those values to your constructor:
      * - name
@@ -4063,11 +4068,24 @@ class Pokemon {
   }
   // !rename the method to attackPokemon
   attackPokemon(pokemon) {
+    pokemon.health -= this.attack - pokemon.defense
+
+    console.log(
+      `${this.name} attacked ${pokemon.name} for ${
+        this.attack - pokemon.defense
+      }`
+    )
+
+    if (pokemon.health <= 0) {
+      return `${pokemon.name} fainted`
+    } else {
+      return `${pokemon.name} is wounded`
+    }
     /**
      * when this pokemon attack an other one
      * he should remove remove health from the attacked pokemon
      * based on his strength minus the defense of the defender
-     *
+     
      * After the attack we might want to check if the attacked pokemon is still alive!
      * We want aswell to display a message like this one:
      * "CURRENT_POKEMON attacked OTHER_POKEMON for XX damage!"
@@ -4089,8 +4107,13 @@ class Pokemon {
  * We want to create a new Pokemon on every single iteration
  */
 const allPokemons = pokemons.map(
-  (poke) =>
-    new Pokemon(/**Add the pokemon name, health, attack and defense here! */)
+  (pokemon) =>
+    new Pokemon(
+      pokemon.name.english,
+      pokemon.base.HP,
+      pokemon.base.attack,
+      pokemon.base.defense
+    )
 )
 
 const figthingPokemons = [
@@ -4106,7 +4129,8 @@ function hadjime() {
     const [attacker, defender] = getFighters()
     // ! attack got renamed
     // attacker.attack(defender)
-    attacker.attackPokemon(defender)
+    const log = attacker.attackPokemon(defender)
+    console.log(log)
   }
 }
 // Uncomment this line when ready to fight!
@@ -4127,3 +4151,13 @@ function getFighters() {
   const defenderIndex = attackerIndex === 0 ? 1 : 0
   return [figthingPokemons[attackerIndex], figthingPokemons[defenderIndex]]
 }
+
+class Human {}
+
+const bulbizarre = allPokemons[0]
+
+const arr = []
+console.log('Hello' instanceof String)
+
+console.log(typeof 'Hello')
+console.log(typeof new String('Hello'))
