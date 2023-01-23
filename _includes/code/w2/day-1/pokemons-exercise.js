@@ -4061,8 +4061,8 @@ class Pokemon {
      * - defense
      */
   }
-
-  attack(pokemon) {
+  // !rename the method to attackPokemon
+  attackPokemon(pokemon) {
     /**
      * when this pokemon attack an other one
      * he should remove remove health from the attacked pokemon
@@ -4094,14 +4094,19 @@ const allPokemons = pokemons.map(
 )
 
 const figthingPokemons = [
-  getRandomPokemon(pokemons),
-  getRandomPokemon(pokemons),
+  // ! Should be allPokemons, not pokemons
+  // getRandomPokemon(pokemons),
+  // getRandomPokemon(pokemons),
+  getRandomPokemon(allPokemons),
+  getRandomPokemon(allPokemons),
 ]
 
 function hadjime() {
   while (theFightIsStillGoing()) {
     const [attacker, defender] = getFighters()
-    attacker.attack(defender)
+    // ! attack got renamed
+    // attacker.attack(defender)
+    attacker.attackPokemon(defender)
   }
 }
 // Uncomment this line when ready to fight!
@@ -4117,6 +4122,8 @@ function getRandomPokemon(array) {
 
 function getFighters() {
   const attackerIndex = Math.floor(Math.random() * 2)
-  const defenderIndex = randomIndex === 0 ? 1 : 0
+  // ! Should be attackerIndex, not randomIndex
+  // const defenderIndex = randomIndex === 0 ? 1 : 0
+  const defenderIndex = attackerIndex === 0 ? 1 : 0
   return [figthingPokemons[attackerIndex], figthingPokemons[defenderIndex]]
 }
