@@ -15,8 +15,9 @@ const render = (list, array) => {
 }
 
 btnSort.addEventListener('click', () => {
-  const copyOfStudents = structuredClone(students)
-  const sortedStudents = copyOfStudents.sort()
+  // const copyOfStudents = structuredClone(students)
+  // const sortedStudents = copyOfStudents.sort()
+  const sortedStudents = students.sort()
 
   render(normalList, students)
   render(sortedList, sortedStudents)

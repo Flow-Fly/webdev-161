@@ -1,0 +1,8 @@
+.paragraph {
+	background-color: gray;
+}
+
+.important {
+	color: green;
+	background-color: rgb(35, 32, 32);
+}

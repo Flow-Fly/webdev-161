@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>JS|DOM challenge IV</title>
+    <script type="module" src="./color-blocks.js"></script>
+    <link rel="stylesheet" href="./styles.css">
+  <body>
+   <header id="header-main">
+    <h1 class="title">JS|DOM : Color blocks challenge</h1>
+    <p>
+      Code a DOM program to add, edit and remove color blocks on the
+      document.
+    </p>
+   </header>
+    <nav id="widgets" class="widget">
+      <input id="input-blocks-count" type="number" min="1" value="1" class="input" />
+      <input id="input-color" type="color" class="input" />
+      <button id="btn-create" class="btn">create</button>
+      <button id="btn-remove" class="btn">remove selected</button>
+      <button id="btn-reset" class="btn">reset</button>
+    </nav>
+    <main id="blocks"></main>
+  </body>
+</html>

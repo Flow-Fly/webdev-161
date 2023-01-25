@@ -1,0 +1,23 @@
+.square {
+	height: 100px;
+	aspect-ratio: 1/1;
+	border: 1px solid black;
+	background-color: dodgerblue;
+	transition: background-color 200ms ease-in-out;
+}
+
+.selected {
+	scale: .8;
+	border: 2px solid red;
+	border-style: inset;
+}
+
+.square:hover {
+	background-color: red;
+}
+
+.container {
+	display: flex;
+	gap: 2rem;
+	flex-wrap: wrap;
+}
