@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+dialog {
+  margin: auto;
+  padding: 2rem;
+}
+
+dialog::backdrop {
+  backdrop-filter: sepia(1) brightness(50%) blur(5px);
+}
+
+.cell {
+  aspect-ratio: 1;
+  background-color: dodgerblue;
+  border: .5px solid black;
+}
+
+#grid {
+  display: grid;
+  width: 200px;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+}
+
+.player {
+  background-color: red;
+}
+
+.bad {
+  background-color: firebrick;
+}
