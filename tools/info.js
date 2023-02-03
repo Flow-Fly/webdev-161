@@ -255,7 +255,13 @@ const getRandomGroups = (size) => {
 }
 
 const congratulate = (student) => {
-  console.log(`CONGRATULATIONS, ${Object.keys(student)[0]}! It's you!`)
+  // console.log(student[Object.keys(student)][0].name)
+  console.log(
+    `
+    CONGRATULATIONS, ${student[Object.keys(student)][0].name}! It's you!
+    Let's see ${Object.keys(student)[0]}
+    `
+  )
 }
 
 const evalProperty = (student, property) => {

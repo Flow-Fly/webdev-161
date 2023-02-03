@@ -10,7 +10,8 @@
       "link": "https://github.com/Chaudoreille"
     },
     "projects": [],
-    "status": "student"
+    "status": "student",
+    "hasPresented": false
   },
   {
     "name": "Cedric",
@@ -23,7 +24,8 @@
       "link": "https://github.com/cedchate"
     },
     "projects": [],
-    "status": "student"
+    "status": "student",
+    "hasPresented": false
   },
   {
     "name": "Christ",
@@ -35,8 +37,11 @@
       "username": "Mershouta",
       "link": "https://github.com/Mershouta"
     },
-    "projects": [],
-    "status": "student"
+    "projects": [
+      "Reflexest"
+    ],
+    "status": "student",
+    "hasPresented": false
   },
   {
     "name": "Delfina",
@@ -48,8 +53,11 @@
       "username": "dolphinstreet",
       "link": "https://github.com/dolphinstreet"
     },
-    "projects": [],
-    "status": "student"
+    "projects": [
+      "🧊 Delfris"
+    ],
+    "status": "student",
+    "hasPresented": false
   },
   {
     "name": "Emmanuelle",
@@ -61,8 +69,9 @@
       "username": "avengingtooth",
       "link": "https://github.com/avengingtooth"
     },
-    "projects": [],
-    "status": "student"
+    "projects": ["Chess"],
+    "status": "student",
+    "hasPresented": false
   },
   {
     "name": "Fabien",
@@ -75,7 +84,8 @@
       "link": "https://github.com/bef4455"
     },
     "projects": [],
-    "status": "student"
+    "status": "student",
+    "hasPresented": false
   },
   {
     "name": "Hiromi",
@@ -87,8 +97,11 @@
       "username": "rominamarmontel",
       "link": "https://github.com/rominamarmontel"
     },
-    "projects": [],
-    "status": "student"
+    "projects": [
+      "Win & Win Happy Monkey"
+    ],
+    "status": "student",
+    "hasPresented": false
   },
   {
     "name": "Ismet",
@@ -100,8 +113,11 @@
       "username": "ismetmedj",
       "link": "https://github.com/ismetmedj"
     },
-    "projects": [],
-    "status": "student"
+    "projects": [
+      "Avoid Them All"
+    ],
+    "status": "student",
+    "hasPresented": false
   },
   {
     "name": "Jean-Luc",
@@ -113,8 +129,11 @@
       "username": "jltp2c",
       "link": "https://github.com/jltp2c"
     },
-    "projects": [],
-    "status": "student"
+    "projects": [
+      "👨🏻‍💻 IronHackVader"
+    ],
+    "status": "student",
+    "hasPresented": false
   },
   {
     "name": "Keifer",
@@ -126,8 +145,11 @@
       "username": "keifershearer",
       "link": "https://github.com/keifershearer"
     },
-    "projects": [],
-    "status": "student"
+    "projects": [
+      "🧟‍♂️ The Backrooms"
+    ],
+    "status": "student",
+    "hasPresented": false
   },
   {
     "name": "Kilian",
@@ -140,7 +162,8 @@
       "link": "https://github.com/lekix-lekix"
     },
     "projects": [],
-    "status": "student"
+    "status": "student",
+    "hasPresented": false
   },
   {
     "name": "Loïc",
@@ -153,7 +176,8 @@
       "link": "https://github.com/LoicMessela"
     },
     "projects": [],
-    "status": "student"
+    "status": "student",
+    "hasPresented": false
   },
   {
     "name": "Lucie",
@@ -165,8 +189,11 @@
       "username": "Lucie-Lanssade",
       "link": "https://github.com/Lucie-Lanssade"
     },
-    "projects": [],
-    "status": "student"
+    "projects": [
+      "Sheepy Run"
+    ],
+    "status": "student",
+    "hasPresented": false
   },
   {
     "name": "Tom",
@@ -179,7 +206,8 @@
       "link": "https://github.com/mahettom"
     },
     "projects": [],
-    "status": "student"
+    "status": "student",
+    "hasPresented": false
   },
   {
     "name": "Marianne",
@@ -191,8 +219,11 @@
       "username": "Magdev98",
       "link": "https://github.com/Magdev98"
     },
-    "projects": [],
-    "status": "student"
+    "projects": [
+      "🍠 The Yam Harvest Game"
+    ],
+    "status": "student",
+    "hasPresented": false
   },
   {
     "name": "Mehdi",
@@ -205,7 +236,8 @@
       "link": "https://github.com/eddira/"
     },
     "projects": [],
-    "status": "student"
+    "status": "student",
+    "hasPresented": false
   },
   {
     "name": "Michael",
@@ -217,8 +249,11 @@
       "username": "TheMike1972",
       "link": "https://github.com/TheMike1972"
     },
-    "projects": [],
-    "status": "student"
+    "projects": [
+      "🕺🏻 Vintage Simon"
+    ],
+    "status": "student",
+    "hasPresented": false
   },
   {
     "name": "Phu",
@@ -231,7 +266,8 @@
       "link": "https://github.com/PhuKaRY"
     },
     "projects": [],
-    "status": "student"
+    "status": "student",
+    "hasPresented": false
   },
   {
     "name": "Sebastian",
@@ -243,8 +279,11 @@
       "username": "Mottschi",
       "link": "https://github.com/Mottschi"
     },
-    "projects": [],
-    "status": "student"
+    "projects": [
+      "RobotRacing"
+    ],
+    "status": "student",
+    "hasPresented": false
   },
   {
     "name": "Soizic",
@@ -256,8 +295,11 @@
       "username": "SoizicCistac",
       "link": "https://github.com/SoizicCistac"
     },
-    "projects": [],
-    "status": "student"
+    "projects": [
+      "🧙🏻 Harry Potter Brick Game"
+    ],
+    "status": "student",
+    "hasPresented": false
   },
   {
     "name": "Sophie",
@@ -269,8 +311,11 @@
       "username": "So-Mina",
       "link": "https://github.com/So-Mina"
     },
-    "projects": [],
-    "status": "student"
+    "projects": [
+      "👾 Seoul-Memory-Game"
+    ],
+    "status": "student",
+    "hasPresented": false
   },
   {
     "name": "Thomas",
@@ -282,8 +327,11 @@
       "username": "lessacs",
       "link": "https://github.com/lessacs"
     },
-    "projects": [],
-    "status": "student"
+    "projects": [
+      "Find the object!"
+    ],
+    "status": "student",
+    "hasPresented": false
   },
   {
     "name": "Vishnu",
@@ -295,7 +343,10 @@
       "username": "VishnuSobhana",
       "link": "https://github.com/VishnuSobhana"
     },
-    "projects": [],
-    "status": "student"
+    "projects": [
+      "which driver are you?/quiz game"
+    ],
+    "status": "student",
+    "hasPresented": false
   }
 ]
