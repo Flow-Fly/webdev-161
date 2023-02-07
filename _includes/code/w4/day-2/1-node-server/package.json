@@ -1,0 +1,19 @@
+{
+  "name": "my_first_server",
+  "version": "1.0.0",
+  "description": "We said it was my first server",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "server",
+    "node",
+    "express"
+  ],
+  "author": "squad-161",
+  "license": "MIT",
+  "dependencies": {
+    "nodemon": "^2.0.20"
+  }
+}

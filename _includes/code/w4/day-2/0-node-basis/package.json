@@ -1,0 +1,6 @@
+{
+  "type": "module",
+  "dependencies": {
+    "dog-names": "^2.1.0"
+  }
+}
