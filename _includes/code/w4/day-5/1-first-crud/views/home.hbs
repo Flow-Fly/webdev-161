@@ -1,0 +1,17 @@
+<h1>Homepage</h1>
+
+<ul>
+
+  {{#each bobs}}
+
+    <li>
+      <p>
+        {{name}}:
+        {{age}}
+
+      </p>
+      <a href='/student/{{_id}}'>Delete {{name}}</a>
+    </li>
+
+  {{/each}}
+</ul>
