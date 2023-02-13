@@ -1,0 +1,36 @@
+<h1>Guitars</h1>
+
+<form action='/guitars/search'>
+
+  <input type='text' list='brand-list' name='brand' />
+
+  <datalist id='brand-list'>
+    <option value='Squier'>Squier</option>
+    <option value='Fender'>Fender</option>
+    <option value='Yamaha'>Yamaha</option>
+    <option value='Gibson'>Gibson</option>
+  </datalist>
+
+  <button>Search</button>
+</form>
+
+<ul class='card-container'>
+  {{#each allGuitars}}
+
+    <li class='card'>
+
+      <h2><a href='/guitars/{{_id}}'>{{name}}</a></h2>
+      <ul>
+        <li>Amount of strings: {{strings}}</li>
+        <li>
+          <picture>
+            <img src='{{picture}}' alt='{{name}}' />
+
+          </picture>
+        </li>
+      </ul>
+    </li>
+
+  {{/each}}
+
+</ul>

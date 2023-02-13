@@ -1,0 +1,31 @@
+<h1>Create guitar</h1>
+
+<form action='/guitars/create' method='post'>
+
+  <div>
+    <label for='strings'>Strings: </label>
+    <input type='number' id='strings' name='strings' />
+  </div>
+  <div>
+    <label for='brand'>Brand: </label>
+    <select id='brand' name='brand'>
+      <option value='Squier'>Squier</option>
+      <option value='Fender'>Fender</option>
+      <option value='Yamaha'>Yamaha</option>
+      <option value='Gibson'>Gibson</option>
+
+    </select>
+  </div>
+  <div><label for='picture'>Picture: </label>
+    <input
+      type='text'
+      id='picture'
+      name='picture'
+      placeholder='picture URL'
+    /></div>
+
+  <div><label for='name'>Name: </label>
+    <input type='text' id='name' name='name' /></div>
+
+  <button>Send form!</button>
+</form>

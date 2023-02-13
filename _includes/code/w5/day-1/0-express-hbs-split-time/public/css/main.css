@@ -1,0 +1,22 @@
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem
+}
+
+.card {
+  height: 10rem;
+
+}
+
+
+.card picture {
+  display: block;
+  height: 5rem;
+  aspect-ratio: 1;
+}
+.card img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
