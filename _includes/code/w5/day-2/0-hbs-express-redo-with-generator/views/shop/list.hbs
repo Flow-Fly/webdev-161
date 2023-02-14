@@ -1,0 +1,15 @@
+<section>
+  {{#each shops}}
+
+    <div class='shop-card'>
+
+      <a href='/shops/{{_id}}' class='shop-name'>{{name}}</a>
+      <p>
+        {{address.number}}
+        {{address.street}}<br />
+        {{address.city}}
+      </p>
+      <a href='/shops/{{_id}}/delete'>Delete that shop!</a>
+    </div>
+  {{/each}}
+</section>

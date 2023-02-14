@@ -1,0 +1,14 @@
+<section>
+
+  {{#each guitars}}
+
+    <div class='card'>
+      <p>{{name}}</p>
+      <p>{{brand}}</p>
+      <p>{{model}}</p>
+      <p>{{shop.name}}</p>
+      <a href='/guitars/{{_id}}/edit'>Update {{name}}</a>
+    </div>
+
+  {{/each}}
+</section>

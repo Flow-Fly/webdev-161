@@ -1,0 +1,27 @@
+<form action='/guitars/{{guitar._id}}/edit' method='post'>
+
+  <div>
+    <label for='name'>Name: </label>
+    <input type='text' id='name' name='name' value='{{guitar.name}}' />
+  </div>
+  <div>
+    <label for='brand'>Brand: </label>
+    <input type='text' id='brand' name='brand' value='{{guitar.brand}}' />
+  </div>
+  <div>
+    <label for='model'>Model: </label>
+    <input type='text' id='model' name='model' value='{{guitar.model}}' />
+  </div>
+
+  <div>
+    <label for='store'>Store: </label>
+    <select name='shop' id='store'>
+      <option selected disabled value='-1'>Select a store</option>
+      {{#each shops}}
+        <option value='{{_id}}'>{{name}}</option>
+      {{/each}}
+    </select>
+  </div>
+
+  <button>Update guitar</button>
+</form>
