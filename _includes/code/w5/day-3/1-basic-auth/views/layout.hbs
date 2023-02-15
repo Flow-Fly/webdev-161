@@ -1,0 +1,34 @@
+<html lang='en'>
+
+  <head>
+    <meta charset='UTF-8' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <meta http-equiv='X-UA-Compatible' content='ie=edge' />
+    <title>{{appTitle}}</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+
+  <body>
+
+    <header>
+      <nav>
+        <ul>
+          <li><a href='/'>Home</a></li>
+          {{#unless isLoggedIn}}
+            <li><a href='/signup'>Signup</a></li>
+            <li><a href='/login'>Log in</a></li>
+          {{/unless}}
+          {{#if isLoggedIn}}
+            <li><a href='/profile'>Profile</a></li>
+            <li><a href='/logout'>Logout</a></li>
+          {{/if}}
+        </ul>
+      </nav>
+    </header>
+
+    {{{body}}}
+
+    <script src='/js/script.js'></script>
+  </body>
+
+</html>
