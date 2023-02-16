@@ -1,0 +1,78 @@
+<h1>Welcome to rubberduck land</h1>
+
+<button id='fetch-all'>Fetch all the ducks</button>
+
+<section class='all-ducks'></section>
+
+<form id='create-form'>
+  <h2>Create form</h2>
+
+  <div>
+    <label for='name'>Name: </label>
+    <input type='text' name='name' id='name' />
+  </div>
+  <div>
+    <label for='material'>Material: </label>
+    <select name='material' id='material'>
+      <option value='rubber'>Rubber</option>
+      <option value='gold'>Gold</option>
+      <option value='diamond'>diamond</option>
+      <option value='rock'>rock</option>
+
+    </select>
+  </div>
+  <div>
+    <label for='color'>Color: </label>
+    <input type='text' name='color' id='color' />
+  </div>
+  <div>
+    <label for='picture'>Picture: </label>
+    <input type='text' name='picture' id='picture' />
+  </div>
+
+  <button id='create-button'>Create duck</button>
+</form>
+
+<form id='update-form'>
+  <h2>Update form</h2>
+
+  <div>
+    <label for='name-update'>Name: </label>
+    <input type='text' name='name' id='name-update' />
+  </div>
+  <div>
+    <label for='material-update'>Material: </label>
+    <select name='material' id='material-update'>
+      <option value='rubber'>Rubber</option>
+      <option value='gold'>Gold</option>
+      <option value='diamond'>diamond</option>
+      <option value='rock'>rock</option>
+
+    </select>
+  </div>
+  <div>
+    <label for='color-update'>Color: </label>
+    <input type='text' name='color' id='color-update' />
+  </div>
+  <div>
+    <label for='picture-update'>Picture: </label>
+    <input type='text' name='picture' id='picture-update' />
+  </div>
+
+  <button id='update-button'>Update duck</button>
+</form>
+
+<template id='template'>
+
+  <article class='card'>
+    <h2 class='name'></h2>
+    <picture>
+      <img src='' loading='lazy' alt='rubberduck' />
+    </picture>
+    <p class='material'></p>
+    <button class='delete'>Delete</button>
+    <button class='update'>Update duck</button>
+
+  </article>
+
+</template>

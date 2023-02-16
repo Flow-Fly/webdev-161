@@ -1,0 +1,31 @@
+.all-ducks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+
+#fetch-all {
+  margin-bottom: 200vh;
+}
+
+.card {
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 2px 4px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card picture {
+  display: block;
+  max-width: 4rem;
+  overflow: hidden;
+  border-radius: 50%;
+
+} 
+
+.card img {
+  object-fit: cover;
+  width: 100%;
+}
