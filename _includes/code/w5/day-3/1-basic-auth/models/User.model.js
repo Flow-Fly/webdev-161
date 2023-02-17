@@ -14,6 +14,12 @@ const userSchema = new Schema(
       required: true,
       select: false,
     },
+
+    userType: {
+      type: String,
+      enum: ['admin', 'user'],
+      default: 'user',
+    },
   },
   {
     // this second object adds extra properties: `createdAt` and `updatedAt`

@@ -83,7 +83,7 @@ router.post('/login', async (req, res, next) => {
 
     const foundUser = await User.findOne(
       { username },
-      { password: 1, username: 1 }
+      { password: 1, username: 1, userType: 1 }
     )
     if (!foundUser) {
       return res.render('auth/login', {
