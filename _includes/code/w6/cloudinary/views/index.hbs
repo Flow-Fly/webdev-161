@@ -1,0 +1,13 @@
+<h1>Animals</h1>
+<a href="/animals/create" class="btn">Add animal</a>
+
+<section class="animals-list">
+    {{#each allAnimals}}
+    <article>
+        <h2>{{name}}</h2>
+        <img src="{{picture_url}}" alt="{{name}}">
+        <p>Size: {{size}}</p>
+        <a href="/animals/{{_id}}">Edit</a>
+    </article>
+    {{/each}}
+</section>
