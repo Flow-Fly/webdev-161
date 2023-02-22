@@ -1,0 +1,9 @@
+{{!-- Create form with enctype, image, and pre-filled fields --}}
+
+<form action="/animals/{{animal._id}}" method="post" enctype="multipart/form-data">
+    <input type="text" name="name" value="{{animal.name}}">
+    <input type="text" name="size" value="{{animal.size}}">
+    <img src="{{animal.picture_url}}" alt="">
+    <input type="file" name="picture_url">
+    <button>Save changes</button>
+</form>
