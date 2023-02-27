@@ -39,8 +39,8 @@ router.patch('/rubberducks/:duckId', async (req, res, next) => {
   const { duckId } = req.params
   const duckToUpdate = { ...req.body }
   try {
-    await Ducks.findByIdAndUpdate(duckId, duckToUpdate)
-    res.json({ message: `Successfully updated duck: ${duckId}` })
+    const duck = await Ducks.findByIdAndUpdate(duckId, duckToUpdate)
+    res.json({ message: `Successfully updated duck: ${duckId}`, duck })
   } catch (error) {
     next(error)
   }

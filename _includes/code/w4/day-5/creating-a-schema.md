@@ -1,10 +1,4 @@
----
-layout: default
-permalink: /:path/:basename/
-parent: Mongoose
-grand_parent: 'Week 4: Serving Data'
-nav_order: 3
----
+
 
 We saw how to create a model but did not yes saw how to create a Mongoose Schema.
 
@@ -52,13 +46,29 @@ const catSchema = new Schema({
 Let's add some more validation:
 
 ```js
+
+const userSchema = new Schema({
+  _id: '456gher4h12eh4eh789eh145',
+  name: {
+    type: String,
+    requires: true
+  },
+  email: String,
+  password: String
+})
+
+const User = model('User', userSchema)
+
 const catSchema = new Schema({
   name: {
     type: Schema.Types.String,
     required: true,
     minLength: 2,
   },
-  owner: Schema.Types.ObjectId,
+  owner: {
+    type: Schema.Types.ObjectId,
+    ref: 'User'
+  },
   colors: [Schema.Types.String],
   eyeColor: {
     type: Schema.Types.String,

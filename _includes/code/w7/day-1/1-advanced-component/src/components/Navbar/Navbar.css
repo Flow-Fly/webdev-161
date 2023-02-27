@@ -1,0 +1,10 @@
+.Navbar {
+  height: 4rem;
+  background-color: black;
+  color: whitesmoke;
+}
+.Navbar ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}

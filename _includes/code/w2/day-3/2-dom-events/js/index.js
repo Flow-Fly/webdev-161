@@ -102,3 +102,8 @@ function removeSelectedSquares(event) {
     element.remove()
   })
 }
+
+// Click a card
+
+//  => tourne la carte
+// Si jamais

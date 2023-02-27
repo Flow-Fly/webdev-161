@@ -69,7 +69,9 @@
       "username": "avengingtooth",
       "link": "https://github.com/avengingtooth"
     },
-    "projects": ["Chess"],
+    "projects": [
+      "Chess"
+    ],
     "status": "student",
     "hasPresented": false
   },

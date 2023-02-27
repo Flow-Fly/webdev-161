@@ -3,7 +3,6 @@ const mongoose = require('mongoose')
 const express = require('express')
 const hbs = require('hbs')
 const path = require('path')
-const { nextTick } = require('process')
 
 const app = express()
 
@@ -64,3 +63,9 @@ app.get('/student/:id', async (req, res, next) => {
 app.listen(5555, () => {
   console.log('http://localhost:5555')
 })
+
+const cat = { name: 'Illiu', age: 34 }
+
+const createdCat = Object.assign({}, cat)
+console.log(createdCat)
+console.log(createdCat.bind({ name: 'coucou' }))

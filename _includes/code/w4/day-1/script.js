@@ -46,11 +46,11 @@ function keepGrinding(delay = 250) {
 console.log('Hey')
 const buttonElement = document.getElementById('btn')
 const chuckJoke = document.getElementById('chuck-joke')
-// buttonElement.addEventListener('click', fetchChuck)
+buttonElement.addEventListener('click', fetchChuck)
 
 async function fetchChuck() {
   try {
-    const res = await fetch('https://api.chucknorris.io/jokes/random')
+    const res = await fetch('https://bwjbnwkbnvkjwbvjwvw.com')
     const content = await res.json()
     console.log(content)
     chuckJoke.textContent = content.value

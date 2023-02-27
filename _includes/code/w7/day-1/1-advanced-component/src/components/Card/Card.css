@@ -1,0 +1,24 @@
+.Card picture {
+  display: block;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  outline: 1px solid black;
+  overflow: hidden;
+}
+
+.Card img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.Card {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  max-width:10rem;
+  background-color: gray;
+  border-radius: 2rem;
+  box-shadow: 0 0 4px 8px rgba(128, 128, 128, 0.105);
+}
