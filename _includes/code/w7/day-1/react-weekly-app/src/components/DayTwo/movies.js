@@ -1,4 +1,4 @@
-export default movies = [
+const movies = [
   {
     title: 'The Shawshank Redemption',
     year: 1994,
@@ -2001,3 +2001,5 @@ export default movies = [
     score: 8,
   },
 ]
+
+export default movies

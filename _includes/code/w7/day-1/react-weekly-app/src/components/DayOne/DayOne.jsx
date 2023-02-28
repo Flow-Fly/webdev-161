@@ -4,6 +4,7 @@ import Card from '../Card/Card'
 import ReactPlayer from 'react-player'
 import ShowMeTheCode from '../ShowMeTheCode/ShowMeTheCode'
 import someDucks from './ducks.json'
+import { v4 as uuid } from 'uuid'
 
 const DayOne = () => {
   /**
@@ -13,13 +14,22 @@ const DayOne = () => {
    *  some duckling as props
    * - A ReactPlayer Component coming from an external package.
    */
+  const ducks = someDucks.map((duck) => {
+    return { ...duck, id: uuid() }
+  })
   return (
     <>
       <ShowMeTheCode components={['Container', 'Card']} />
 
       <Container gap="4rem" background="hsla(0, 50%, 75%, 1)">
-        {someDucks.map((duckling) => {
-          return <Card name={duckling.name} picture={duckling.image} />
+        {ducks.map((duckling, i) => {
+          return (
+            <Card
+              key={duckling.id}
+              name={duckling.name}
+              picture={duckling.image}
+            />
+          )
         })}
       </Container>
       <ReactPlayer

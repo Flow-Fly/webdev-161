@@ -1,0 +1,14 @@
+.CardMovie {
+  position: relative
+}
+
+.CardMovie span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+
+.CardMovie.great {
+  background-color: red;
+}
