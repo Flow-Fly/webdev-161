@@ -1,0 +1,16 @@
+.Title {
+  text-align: center;
+  margin: 1rem 0;
+  pointer-events: none;
+}
+
+.Title:not(.big)::before {
+  content: open-quote;
+}
+.Title:not(.big)::after {
+  content: close-quote;
+}
+
+.Title.big {
+  font-size: 2rem;
+}
