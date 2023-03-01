@@ -1,0 +1,14 @@
+.Button {
+  all:unset;
+  font-family: inherit;
+  padding: .5rem 1.5rem;
+  background-color: var(--white);
+  color: var(--black);
+  border-radius: .25rem;
+  cursor: pointer;
+  transition: all 200ms;
+}
+.Button:hover, .Button:active {
+  background-color: var(--black);
+  color: var(--white);
+}

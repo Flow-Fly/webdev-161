@@ -19,7 +19,7 @@ const DayOne = () => {
   })
   return (
     <>
-      <ShowMeTheCode components={['Container', 'Card']} />
+      <ShowMeTheCode components={'Container'} />
 
       <Container gap="4rem" background="hsla(0, 50%, 75%, 1)">
         {ducks.map((duckling, i) => {
@@ -32,6 +32,7 @@ const DayOne = () => {
           )
         })}
       </Container>
+      <ShowMeTheCode components={'Card'} />
       <ReactPlayer
         width={'100%'}
         controls={true}

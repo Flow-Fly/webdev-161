@@ -11,10 +11,12 @@ header {
   display: flex;
   align-items: center;
   padding: 1rem;
+  margin-bottom: 1rem;
 }
 
 main {
   max-width: 900px;
+  padding: 0 1rem;
   margin: 0 auto;
 }
 

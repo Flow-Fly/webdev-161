@@ -11,7 +11,7 @@ const Container = (props) => {
 
   const style = {
     gap: gap ? gap : '1rem',
-    backgroundColor: background ? background : 'white',
+    backgroundColor: background ? background : '#3d3d3d',
     flexDirection: direction ? direction : 'row',
   }
   return (
