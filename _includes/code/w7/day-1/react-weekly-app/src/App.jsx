@@ -26,18 +26,18 @@ function App() {
     return () => setDays({ ...days, [day]: !days[day] })
   }
 
-  const [showDayOne, setShowDayOne] = useState(false)
-  const [showDayTwo, setShowDayTwo] = useState(false)
-  const [showDayThree, setShowDayThree] = useState(false)
-  const handleDayOneClick = () => {
-    setShowDayOne(!showDayOne)
-  }
-  const handleDayTwoClick = () => {
-    setShowDayTwo(!showDayTwo)
-  }
-  const handleDayThreeClick = () => {
-    setShowDayThree(!showDayThree)
-  }
+  // const [showDayOne, setShowDayOne] = useState(false)
+  // const [showDayTwo, setShowDayTwo] = useState(false)
+  // const [showDayThree, setShowDayThree] = useState(false)
+  // const handleDayOneClick = () => {
+  //   setShowDayOne(!showDayOne)
+  // }
+  // const handleDayTwoClick = () => {
+  //   setShowDayTwo(!showDayTwo)
+  // }
+  // const handleDayThreeClick = () => {
+  //   setShowDayThree(!showDayThree)
+  // }
   return (
     <>
       <header>

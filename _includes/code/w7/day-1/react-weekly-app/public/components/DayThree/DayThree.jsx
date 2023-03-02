@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import Title from './../Title/Title'
 import BandForm from '../BandForm/BandForm'
+import Container from './../Container/Container'
+import Button from './../Button/Button'
 
 const DayThree = () => {
   const [count, setCount] = useState(0)
@@ -17,8 +19,10 @@ const DayThree = () => {
 
   return (
     <>
-      <Title>{count}</Title>
-      <VeryOldOne handleIncrement={handleIncrement} />
+      <Container direction="column">
+        <Title>{count}</Title>
+        <VeryOldOne handleIncrement={handleIncrement} />
+      </Container>
 
       <Title>Forms in React</Title>
       {/* Form to create a band */}
@@ -58,7 +62,7 @@ function Children(props) {
   // const handleIncrement = () => {
   //   props.setCount((currentCount) => currentCount + 1)
   // }
-  return <button onClick={props.handleIncrement}> + </button>
+  return <Button callback={props.handleIncrement}> + </Button>
 }
 
 export default DayThree
