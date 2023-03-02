@@ -46,7 +46,7 @@ const LifeCycleTimer = () => {
    * AND when the time or greaterThanTen variables changes.
    */
   useEffect(() => {
-    // console.log('Update of time: ', time)
+    console.log('Update of time: ', time)
   }, [time, greaterThanTen])
 
   /**
@@ -54,7 +54,7 @@ const LifeCycleTimer = () => {
    * AND when the greaterThanTen variable change.
    */
   useEffect(() => {
-    // console.log(greaterThanTen)
+    console.log(greaterThanTen)
   }, [greaterThanTen])
 
   return (
