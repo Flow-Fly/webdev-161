@@ -4,12 +4,13 @@ import Container from '../Container/Container'
 import Counter from '../Counter/Counter'
 import moviesDB from './movies'
 import Button from '../Button/Button'
-import './../MovieCard/MovieCard.css'
 import ShowMeTheCode from '../ShowMeTheCode/ShowMeTheCode'
+import MovieCard from '../MovieCard/MovieCard'
+import './DayTwo.css'
 
 const DayTwo = () => {
   const [movies, setMovies] = useState(moviesDB.slice(0, 3))
-
+  const [searchString, setSearchString] = useState('')
   const handleAddMovie = () => {
     /**
      * Get all the titles we currently have in our state
@@ -78,36 +79,58 @@ const DayTwo = () => {
     setMovies(newList)
   }
 
+  const handleSearch = ({ target }) => {
+    setSearchString(target.value)
+    // filterMovies(target.value)
+  }
+  // const filterMovies = (search) => {
+  //   const moviesToDisplay = movies.filter((movie) => {
+  //     return movie.title.match(RegExp(search, 'i'))
+  //     return movie.title.toLowerCase().includes(searchString.toLowerCase())
+  //   })
+  //   setMovies(moviesToDisplay)
+  // }
+
+  let moviesToDisplay = movies
+  if (searchString !== '') {
+    moviesToDisplay = movies.filter((movie) => {
+      return movie.title.match(new RegExp(searchString, 'i'))
+      return movie.title.toLowerCase().includes(searchString.toLowerCase())
+    })
+  }
+
   return (
     <>
-      <Counter />
-      <ShowMeTheCode components={'Counter'} />
-      <ClassCounter />
-      <ShowMeTheCode components={'ClassCounter'} />
+      <div>
+        <Counter />
+        <ShowMeTheCode components={'Counter'} />
+        <ClassCounter />
+        <ShowMeTheCode components={'ClassCounter'} />
+        <Container>
+          <Button callback={handleAddMovie}>Add a movie 🎥</Button>
+          <Button callback={handleSortMovieByYear}>
+            Sort by Production year 🎥
+          </Button>
+          <Button callback={handleSortMovieByTitle}>Sort by title 🎥</Button>
+          <Button callback={handleSortMovieByNote}>Sort by note 🎥</Button>
+        </Container>
+      </div>
       <Container>
-        <Button callback={handleAddMovie}>Add a movie 🎥</Button>
-        <Button callback={handleSortMovieByYear}>
-          Sort by Production year 🎥
-        </Button>
-        <Button callback={handleSortMovieByTitle}>Sort by title 🎥</Button>
-        <Button callback={handleSortMovieByNote}>Sort by note 🎥</Button>
+        <input
+          placeholder="Search a movie"
+          type="search"
+          value={searchString}
+          onChange={handleSearch}
+        />
       </Container>
       <Container>
-        {movies.map((movie) => {
+        {moviesToDisplay.map((movie) => {
           return (
-            <div
+            <MovieCard
               key={movie.title}
-              className={`MovieCard ${movie.score >= 8.8 && 'great'}`}
-            >
-              <div className="close" onClick={() => handleDelete(movie.title)}>
-                <span className="cross"></span>
-              </div>
-              <h3>{movie.title}</h3>
-              <p>Director: {movie.director}</p>
-              <p>Production year: {movie.year}</p>
-              <p>Genres: {movie.genre.join(' ')}</p>
-              <p>Score: {movie.score}</p>
-            </div>
+              movie={movie}
+              handleDelete={handleDelete}
+            />
           )
         })}
       </Container>

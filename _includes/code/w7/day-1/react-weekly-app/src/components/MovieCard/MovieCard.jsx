@@ -1,11 +1,9 @@
 import React from 'react'
+import './MovieCard.css'
 
-const MovieCard = () => {
+const MovieCard = ({ handleDelete, movie }) => {
   return (
-    <div
-      key={movie.title}
-      className={`MovieCard ${movie.score >= 8.8 && 'great'}`}
-    >
+    <div className={`MovieCard ${movie.score >= 8.8 && 'great'}`}>
       <div className="close" onClick={() => handleDelete(movie.title)}>
         <span className="cross"></span>
       </div>

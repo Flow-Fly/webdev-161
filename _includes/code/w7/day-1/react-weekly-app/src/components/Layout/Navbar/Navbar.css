@@ -9,3 +9,7 @@
   gap: 1rem;
   list-style: none;
 }
+
+a {
+  color: white;
+}

@@ -7,6 +7,7 @@ const BandForm = (props) => {
   const [name, setName] = useState('')
   const [year, setYear] = useState('')
   const [style, setStyle] = useState('')
+  const [num, setNum] = useState(0)
 
   const handleNameChange = (event) => setName(event.target.value)
   const handleStyleChange = (event) => setStyle(event.target.value)
@@ -43,6 +44,18 @@ const BandForm = (props) => {
           />
         </label>
       </div>
+
+      <input
+        type="number"
+        min={0}
+        value={num}
+        onChange={(e) => {
+          console.log('hey', e.target.value)
+          setNum(e.target.value)
+        }}
+        name=""
+        id=""
+      />
       <div>
         <label htmlFor="year">
           Creation date:
