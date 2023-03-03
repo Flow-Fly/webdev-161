@@ -129,3 +129,9 @@ function Card(props) {
 }
 
 export default App
+
+// let result
+// if ()
+
+// // const result = if ()
+// const res = Math.random() > .5 ? 'sup' : 'min'
