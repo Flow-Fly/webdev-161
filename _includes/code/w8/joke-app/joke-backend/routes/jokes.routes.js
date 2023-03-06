@@ -13,8 +13,14 @@ router.get('/', async (req, res, next) => {
   // const myRegexp = /fish /i
 
   const query = {
-    joke: RegExp(req.query.joke, 'i'),
+    joke: RegExp(req.query.joke, 'gi'),
     category: req.query.category,
+  }
+  if (!query.joke) {
+    delete query.joke
+  }
+  if (!query.category) {
+    delete query.category
   }
   try {
     const jokes = await Joke.find(query)
@@ -80,6 +86,7 @@ router.patch('/:id', async (req, res, next) => {
   }
 })
 
+// Prefixed by /api/jokes
 router.delete('/:id', async (req, res, next) => {
   try {
     await Joke.findByIdAndDelete(req.params.id)

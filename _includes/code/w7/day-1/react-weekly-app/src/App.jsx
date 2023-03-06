@@ -26,12 +26,12 @@ function App() {
     return () => setDays({ ...days, [day]: !days[day] })
   }
 
-  // const [showDayOne, setShowDayOne] = useState(false)
+  const [showDayOne, setShowDayOne] = useState(false)
   // const [showDayTwo, setShowDayTwo] = useState(false)
   // const [showDayThree, setShowDayThree] = useState(false)
-  // const handleDayOneClick = () => {
-  //   setShowDayOne(!showDayOne)
-  // }
+  const handleDayOneClick = () => {
+    setShowDayOne(!showDayOne)
+  }
   // const handleDayTwoClick = () => {
   //   setShowDayTwo(!showDayTwo)
   // }
@@ -46,8 +46,8 @@ function App() {
       <main>
         {/* DAY ONE */}
 
-        <Button callback={handleDayClick('one')}>Show day 1</Button>
-        {days.one && (
+        <Button callback={handleDayOneClick}>Show day 1</Button>
+        {showDayOne && (
           <section>
             <Title big={true}>Day one Code</Title>
             <ShowMeTheCode components="DayOne" />
