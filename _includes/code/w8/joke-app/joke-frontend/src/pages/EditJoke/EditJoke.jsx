@@ -11,13 +11,20 @@ const EditJoke = () => {
 
   useEffect(() => {
     myApi
-      .get(`/${params.jokeId}`)
-      .then((response) => {
-        console.log(response.data)
-        setJoke(response.data.oneJoke.joke)
-        setCategory(response.data.oneJoke.category)
+      .getOneJoke(params.jokeId)
+      .then((res) => {
+        setJoke(res.data.oneJoke.joke)
+        setCategory(res.data.oneJoke.category)
       })
       .catch((e) => console.error(e))
+    // myApi
+    //   .get(`/${params.jokeId}`)
+    //   .then((response) => {
+    //     console.log(response.data)
+    //     setJoke(response.data.oneJoke.joke)
+    //     setCategory(response.data.oneJoke.category)
+    //   })
+    //   .catch((e) => console.error(e))
     // axios
     //   .get(`http://localhost:5005/api/jokes/${params.jokeId}`)
     //   .then((response) => {
@@ -34,10 +41,11 @@ const EditJoke = () => {
     const jokeToUpdate = { joke, category }
 
     try {
-      const newJoke = await axios.patch(
-        `http://localhost:5005/api/jokes/${params.jokeId}`,
-        jokeToUpdate
-      )
+      const newJoke = await myApi.updateJoke(params.jokeId, jokeToUpdate)
+      // const newJoke = await axios.patch(
+      //   `http://localhost:5005/api/jokes/${params.jokeId}`,
+      //   jokeToUpdate
+      // )
       if (newJoke.status === 202) {
         navigate('/jokes')
       }

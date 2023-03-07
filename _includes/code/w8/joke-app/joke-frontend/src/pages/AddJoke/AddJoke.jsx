@@ -12,7 +12,8 @@ const AddJoke = () => {
     event.preventDefault()
     const jokeToCreate = { joke, category }
     try {
-      const response = await myApi.post('/', jokeToCreate)
+      const response = await myApi.createJoke(jokeToCreate)
+      // const response = await myApi.post('/', jokeToCreate)
       console.log(response)
 
       if (response.status === 201) {

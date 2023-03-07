@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Link, useParams, useNavigate } from 'react-router-dom'
 import axios from 'axios'
+import myApi from '../../service/service'
 
 const Joke = () => {
   const [joke, setJoke] = useState(null)
@@ -9,18 +10,24 @@ const Joke = () => {
   const navigate = useNavigate()
 
   useEffect(() => {
-    axios
-      .get(`http://localhost:5005/api/jokes/${params.jokeId}`)
-      .then((response) => {
-        console.log(response.data)
-        setJoke(response.data.oneJoke)
-      })
+    myApi
+      .getOneJoke(params.jokeId)
+      .then((res) => setJoke(res.data.oneJoke))
       .catch((e) => console.error(e))
+
+    // axios
+    //   .get(`http://localhost:5005/api/jokes/${params.jokeId}`)
+    //   .then((response) => {
+    //     console.log(response.data)
+    //     setJoke(response.data.oneJoke)
+    //   })
+    //   .catch((e) => console.error(e))
   }, [])
 
   const handleClick = async () => {
     try {
-      await axios.delete(`http://localhost:5005/api/jokes/${params.jokeId}`)
+      await myApi.deleteJoke(params.jokeId)
+      // await axios.delete(`http://localhost:5005/api/jokes/${params.jokeId}`)
       navigate('/jokes')
     } catch (error) {
       console.error(error)

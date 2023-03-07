@@ -12,6 +12,16 @@ const Jokes = () => {
     Dark: false,
   })
 
+  // const fetchJokes = async (query) => {
+  //   try {
+  //     const res = await myApi.getAllJokes(query)
+  //     console.log(res)
+  //     setJokes(res)
+  //   } catch (error) {
+  //     console.error(error)
+  //   }
+  // }
+
   useEffect(() => {
     let queryString = ''
     if (query) {
@@ -22,14 +32,19 @@ const Jokes = () => {
         queryString += `&category=${key}`
       }
     }
-    try {
-      myApi.get(`/?${queryString}`).then((response) => {
-        console.log(response.data)
-        setJokes(response.data)
-      })
-    } catch (error) {
-      console.error(error)
-    }
+
+    myApi
+      .getAllJokes(queryString)
+      .then((res) => setJokes(res.data))
+      .catch((e) => console.error(e))
+
+    // myApi
+    //   .get(`/?${queryString}`)
+    //   .then((response) => {
+    //     console.log(response.data)
+    //     setJokes(response.data)
+    //   })
+    //   .catch((e) => console.error(e))
   }, [query, filters])
 
   const handleCheckBox = (event) => {
