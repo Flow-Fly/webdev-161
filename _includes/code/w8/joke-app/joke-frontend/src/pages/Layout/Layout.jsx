@@ -1,6 +1,6 @@
 import React from 'react'
 import { Outlet, NavLink } from 'react-router-dom'
-
+import Switcheroo from '../../components/Switcheroo/Switcheroo'
 const Layout = () => {
   return (
     <>
@@ -18,6 +18,7 @@ const Layout = () => {
             </li>
           </ul>
         </nav>
+        <Switcheroo />
       </header>
 
       <main>

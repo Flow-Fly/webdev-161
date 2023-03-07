@@ -1,0 +1,58 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+ }
+
+.theme-wrapper {
+  --day: #f9f9f9;
+  --night: rgb(28, 28, 28);
+  --highlight: rgb(71, 125, 225);
+  background-color: var(--day);
+  border-radius: 100vw;
+  outline: 4px solid var(--highlight);
+}
+
+#theme {
+  position: relative;
+  display: flex;
+  gap: 2rem;
+  padding: .5rem 1rem;
+}
+
+#theme-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  appearance: none;
+  border-radius: 100vw;
+  outline-offset: 8px;
+}
+
+.theme-toggle {
+  position: relative;
+  /* background-color: var(--night); */
+  width: 3rem;
+  height: 1.5rem;
+  border-radius: 100vw;
+  box-shadow: inset 0 -2px 4px rgba(0, 0, 0, 0.195);
+}
+
+.theme-toggle::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: .05rem;
+  translate: 0 -50%;
+  height: 1.4rem;
+  width: 1.4rem;
+  border-radius: 50%;
+  background-color: rgb(224, 223, 223);
+  transition: translate 200ms ease-in-out;
+}
+
+#theme-input:checked ~ .theme-toggle::after {
+  translate: 108% -50%;
+}
