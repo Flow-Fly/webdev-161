@@ -1,10 +1,11 @@
 import React, { useContext } from 'react'
-import { ThemeContext } from '../../context/ThemeContext'
+import { ThemeContext, useTheme } from '../../context/ThemeContext'
 import { Link } from 'react-router-dom'
 import './JokeCard.css'
 
 const JokeCard = ({ _id, category, joke }) => {
-  const { theme, setTheme } = useContext(ThemeContext)
+  // const { theme, setTheme } = useContext(ThemeContext)
+  const { theme, setTheme } = useTheme()
 
   return (
     <div className={`JokeCard ${theme}`} key={_id}>

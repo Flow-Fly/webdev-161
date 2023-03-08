@@ -5,5 +5,6 @@ router.get('/', (req, res, next) => {
 })
 
 router.use('/jokes', require('./jokes.routes'))
+router.use('/auth', require('./auth.routes'))
 
 module.exports = router

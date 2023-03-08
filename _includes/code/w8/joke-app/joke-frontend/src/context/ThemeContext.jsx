@@ -1,4 +1,4 @@
-import React, { useState, createContext } from 'react'
+import React, { useState, createContext, useContext } from 'react'
 
 export const ThemeContext = createContext()
 
@@ -11,6 +11,10 @@ const ThemeWrapper = ({ children }) => {
       {children}
     </ThemeContext.Provider>
   )
+}
+
+export function useTheme() {
+  return useContext(ThemeContext)
 }
 
 export default ThemeWrapper
